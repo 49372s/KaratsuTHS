@@ -22,7 +22,7 @@
 
             initialize.onclick = ()=>{
                 $.post('/api/reset/all.php',(data)=>{
-                    window.alert("リセット");
+                    console.log(data)
                 })
             }
         </script>
