@@ -1,0 +1,6 @@
+<?php
+$sql_hostname = "SQLサーバーアドレス";
+$sql_dbname = "DB名";
+$sql_user = "SQLユーザー名";
+$sql_pwd = "SQLパスワード";
+?>
