@@ -1,7 +1,7 @@
 <?php
 function getAuthenticate(){
     include($_SERVER['DOCUMENT_ROOT']."/core/sec/data/key.php");
-    return array("host"=>$sql_hostname,"dbname"=>$sql_dbname,"user"=>$sql_user,"pwd"=>$sql_pwd);
+    return array("host"=>$sql_hostname,"dbname"=>$sql_dbname,"user"=>$sql_user,"pwd"=>$sql_pwd,"admin"=>$sql_admin,"pwad"=>$sql_admpw);
 }
 
 function cdb(){
