@@ -22,7 +22,12 @@
 
             initialize.onclick = ()=>{
                 $.post('/api/reset/all.php',(data)=>{
-                    console.log(data)
+                    if(data.result == "success"){
+                        window.alert("成功しました");
+                    }else{
+                        console.log(data);
+                        window.alert("失敗しました\n"+data.result);
+                    }
                 })
             }
         </script>

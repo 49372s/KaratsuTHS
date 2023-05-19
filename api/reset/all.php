@@ -19,5 +19,15 @@ foreach($adm->query($sql) as $val){
     $adm -> query($sql);
 }
 
-//テーブルを作成する()
+//テーブルを作成する
+// ID, 名前, 種別, 設置区域, 最終監視時間, 状態, 報知種別
+$sql = "CREATE TABLE ks(id int(255) not null auto_increment, name varchar(255), model int(255), area varchar(255), lastUpdate varchar(255), status int(255), alart int(255),PRIMARY KEY (id));";
+$flug = $pdo->query($sql);
+header('Content-Type: application/json; charset=UTF-8;');
+if($flug == 1){
+    echo json_encode(array("result"=>"success"));
+}else{
+    echo json_encode(array("result"=>"fail","reason"=>$pdo->errorInfo()));
+    exit();
+}
 ?>
