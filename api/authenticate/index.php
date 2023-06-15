@@ -15,5 +15,10 @@ if($_GET['id']!=$tmp['user'] || $_GET['pass']!=$tmp['pass']){
     //認証失敗
     responseJSON(false,"Authenticate failed.");
 }
+//認証成功してるっぽいのでトークンを返す
 
+$token = md5($tmp['pass']);
+$now = date('YmdHi');
+$token = md5($token.$now);
+responseJSON(true,$token);
 ?>
