@@ -11,7 +11,7 @@ if(empty($_GET['id']) || empty($_GET['token'])){
 //パスワードを読み込む
 $tmp = getAuthenticateInfo();
 //認証
-if($_GET['id']!=$tmp['user'] || $_GET['pass']!=$tmp['pass']){
+if($_GET['id']!=$tmp['user'] || $_GET['token']!=$tmp['pass']){
     //認証失敗
     responseJSON(false,"Authenticate failed.");
 }
