@@ -1,6 +1,19 @@
 <?php
+//SQL接続情報
+//ホスト情報
 $sql_hostname = "SQLサーバーアドレス";
+//データベース名
 $sql_dbname = "DB名";
+//一般データベース接続者情報
 $sql_user = "SQLユーザー名";
+//一般データベース接続者パスワード
 $sql_pwd = "SQLパスワード";
+
+//SQL管理者情報
+$sql_admin = "SQL管理者ユーザー名";
+$sql_admpw = "SQL管理者パスワード";
+
+//API接続情報
+$api_user = "APIユーザーID";
+$api_pwd = "APIユーザーパスワード";
 ?>
