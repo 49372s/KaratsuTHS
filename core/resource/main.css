@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap');
+@font-face {
+    font-family: 'DISPLAY_FREE_TFB';
+    src: url("/core/resource/font/DISPLAY FREE TFB.ttf");
+}
+
 *{
     font-family: "Noto Sans JP";
     margin: 0;
@@ -34,4 +39,8 @@ button{
 button:hover{
     background-color: #bcb5ff;
     box-shadow: 0 0 5px rgba(0 0 0 / .5);
+}
+
+.tfb{
+    font-family: 'DISPLAY_FREE_TFB';
 }
